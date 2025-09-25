@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vite App</title>
+    <script type="module" src="/src/main.js"></script>
+    <link rel="stylesheet" href="/src/style.css">
+
+
+  </head>
+  <body onload="init()">
+    <div id="app" style ="text-align: center;" >
+      <p>It's 4 in a row!</p>
+      
+      <!-- Room selection section -->
+      <div id="room-selection" style="margin-bottom: 20px;">
+        <label for="room-input" style="margin-right: 10px; font-size: 16px;">Enter Room Number:</label>
+        <input type="number" id="room-input" placeholder="1" min="1" style="padding: 5px; font-size: 16px; width: 80px;">
+        <button onclick="joinRoom()" style="margin-left: 10px; padding: 5px 15px; font-size: 16px;">Join Room</button>
+      </div>
+      
+      <button onclick="resetGame()" style="margin-bottom: 20px; padding: 10px 20px; font-size: 16px;">Reset Game</button>
+      <div id="board">
+      
+
+      </div>
+    </div>
+   
+
+  </body>
+</html>
